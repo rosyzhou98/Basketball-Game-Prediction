@@ -1,0 +1,36 @@
+trainx <- train[,-1]
+###PCA
+prin_comp <- prcomp(trainx, scale. = T)
+#names(prin_comp)
+std_dev <- prin_comp$sdev
+pr_var <- std_dev^2
+prop_varex <- pr_var/sum(pr_var)
+plot(prop_varex, xlab = "Principal Component",
+     ylab = "Proportion of Variance Explained",
+     type = "b")
+plot(cumsum(prop_varex), xlab = "Principal Component",
+     ylab = "Cumulative Proportion of Variance Explained",
+     type = "b")
+#length(prin_comp$x)
+train.data <- data.frame(HTWins = train$HTWins, prin_comp$x) ##???
+train.data <- train.data[,1:100]
+#head(train.data)
+#trainx <- data.frame(trainx)[,1:100]
+
+#run a decision tree
+library(rpart)
+rpart.model <- rpart(HTWins~ .,data = train.data, method = "anova")
+rpart.model
+
+test$HTWins <- rep(NA,1648)
+#View(test)
+#transform test into PCA
+test.data <- predict(prin_comp, newdata = test)
+test.data <- as.data.frame(test.data)
+#select the first 30 components
+test.data <- test.data[,1:100]
+#make prediction on test data
+rpart.prediction <- predict(rpart.model, test.data)
+rpart.prediction
+p<-ifelse(rpart.prediction>0.5,1,0)
+mean(p) #0.57
