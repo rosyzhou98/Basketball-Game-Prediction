@@ -82,8 +82,19 @@ The vars VT.pmxU, VT.pmxW, HT.pmxU and HT.pmxW are very complicated composites t
 
 ## Adding New Variables
 
-** pht
+* pht: Prior winning rate of a team playing as the home team
+
+* pvt: Prior winning rate of a team playing as visiting team
+
+* p: Total prior winning probability, winning rate of this team as both the visiting team and home team.
 
 
+## Models
+
+* We applied Logistic Regression, Ridge/Lasso Regression, Gradient Boosting Machines, Random Forest, Partial Least Squares and Ensemble. Ridge Regression performed the best, as it gave penalty on adding too many variables.
+
+# Results
+
+* We reached accuracy of 68.82%. Ranked #14 out of 147 teams.
 
 
