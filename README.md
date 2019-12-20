@@ -97,4 +97,10 @@ The vars VT.pmxU, VT.pmxW, HT.pmxU and HT.pmxW are very complicated composites t
 
 * We reached accuracy of 68.82%. Ranked #14 out of 147 teams.
 
+# About the Authors:
+
+Sophia Zhou
+
+Junpeng Jiang
+
 
