@@ -3,9 +3,8 @@ We wanted to predict the winning team based on data studiously collected by a ba
 
 The data is composed of 2 files. The first, train.csv, contains the variables described below as well as the outcome variable (HTWins). There are 218 variables and 9520 rows. The second, test.csv, contains all of the variables except the outcome variable. IT has 1648 rows. 
 
+### CODEBOOK:
 
-
-CODEBOOK:
 VT Visiting Team Name abbr
 HT Home Team Name abbr
 
@@ -73,3 +72,4 @@ plmin Points plus/minus -- a general measure of how effective player is
 The vars VT.pmxU, VT.pmxW, HT.pmxU and HT.pmxW are very complicated composites that attempt to express the offensive and defensive difficulty of past games for the VT and HT.
 
 
+## Data Cleaning
