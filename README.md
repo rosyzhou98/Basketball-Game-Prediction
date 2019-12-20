@@ -79,3 +79,11 @@ The vars VT.pmxU, VT.pmxW, HT.pmxU and HT.pmxW are very complicated composites t
 * However, we found some repetitive columns in the data when we went through. For example, we found values of “VT.TS.fga” are exactly the same as values of “HT.OTS.fga”. “VT.TS.fga” represents total ‘field goals attempted’ by the Visiting Team; and “HT.OTS.fga” represents total ‘field goals attempted’ by the Home Team’s opposing team, which is just VT. Therefore we removed all columns that has “.O” in it
 
 * We also removed id, game id, date, in the training data and same for in test dataset. These variables are unique in each row and shouldn’t be significant indicators of the teams’ future game win or loss
+
+## Adding New Variables
+
+** pht
+
+
+
+
