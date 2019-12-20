@@ -93,7 +93,7 @@ The vars VT.pmxU, VT.pmxW, HT.pmxU and HT.pmxW are very complicated composites t
 
 * We applied Logistic Regression, Ridge/Lasso Regression, Gradient Boosting Machines, Random Forest, Partial Least Squares and Ensemble. Ridge Regression performed the best, as it gave penalty on adding too many variables.
 
-# Results
+## Results
 
 * We reached accuracy of 68.82%. Ranked #14 out of 147 teams.
 
