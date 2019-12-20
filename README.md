@@ -8,8 +8,10 @@ The data is composed of 2 files. The first, train.csv, contains the variables de
 CODEBOOK:
 VT Visiting Team Name abbr
 HT Home Team Name abbr
+
 VTleague League of Visiting Team abbr
 HTleague League of Home Team abbr
+
 VTcumRest cumulative rest (travel, workouts, etc.) of VT
 HTcumRest cumulative rest (travel, workouts, etc.) of HT
 
