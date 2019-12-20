@@ -99,7 +99,9 @@ The vars VT.pmxU, VT.pmxW, HT.pmxU and HT.pmxW are very complicated composites t
 
 # About the Authors:
 
-Sophia Zhou
+Rosy(Pu) Zhou (linkedin.com/in/rosy-zhou)
+
+Sophia Zhou (linkedin.com/in/wenxinzhousophia/)
 
 Junpeng Jiang
 
