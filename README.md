@@ -3,7 +3,7 @@ We wanted to predict the winning team based on data studiously collected by a ba
 
 The data is composed of 2 files. The first, train.csv, contains the variables described below as well as the outcome variable (HTWins). There are 218 variables and 9520 rows. The second, test.csv, contains all of the variables except the outcome variable. IT has 1648 rows. 
 
-### CODEBOOK:
+### Data Description:
 
 VT Visiting Team Name abbr
 HT Home Team Name abbr
